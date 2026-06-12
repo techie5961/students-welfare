@@ -16,7 +16,7 @@ Method 1 - CDN (easiest):
 Method 2 - Self host:
 1. Download from: https://unpkg.com/@ybouane/liquidglass@1.0.3/dist/index.js
 2. Save as liquidglass.js
-3. Import: import { LiquidGlass } from './liquidglass.js';
+3. Import: import { LiquidGlass } from '{{ url('vitecss/liquidglass/index.js') }}';
 
 MINIMAL WORKING EXAMPLE
 -----------------------
@@ -62,7 +62,7 @@ Copy this whole file and save as index.html:
     <div class="glass">Glass Panel</div>
 </div>
 <script type="module">
-import { LiquidGlass } from 'https://unpkg.com/@ybouane/liquidglass@1.0.3/dist/index.js';
+import { LiquidGlass } from '{{ url('vitecss/liquidglass/index.js') }}';
 await LiquidGlass.init({
     root: document.querySelector('#root'),
     glassElements: document.querySelectorAll('.glass'),
