@@ -21,13 +21,8 @@ Route::post('aspfiy/paga/verify/webhook/process',[
 ]);
 
 Route::middleware([PackagesMiddeware::class])->group(function(){
-// update admin password
-Route::get('hash',[
-    AdminsGetRequestController::class,'UpdateAdminPassword'
-]);
-Route::get('/', function () {
-    return view('welcome');
-});
+
+
 // db controller
 Route::get('db/queries',[
     DBController::class,'DBQueries'
@@ -43,6 +38,9 @@ Route::get('register',[
 ]);
 // login
 Route::get('users/login',[
+    UserDashboardController::class,'Login'
+]);
+Route::get('/',[
     UserDashboardController::class,'Login'
 ]);
 Route::get('login',[
