@@ -24,21 +24,21 @@
             <label>Mobile Number</label>
             <div class="cont">
                 <span style="padding-right:0;" class="h-full row p-10 p-left-20 align-center">+234</span>
-                <input inputmode="numeric" name="phone" type="number" placeholder="Enter your mobile number" class="inp input required">
+                <input autocomplete="off" readonly onfocus="this.removeAttribute('readonly')" inputmode="numeric" name="phone" type="number" placeholder="Enter your mobile number" class="inp input required">
             </div>
            </div>
            {{-- new input --}}
             <div class="column g-5 w-full">
             <label>Password</label>
             <div class="cont">
-                <input name="password" type="text" vitecss-type='password' placeholder="Enter password" class="inp input required">
+                <input name="password" type="password" autocomplete="new-password" readonly onfocus="this.removeAttribute('readonly')" placeholder="Enter password" class="inp input required">
             </div>
            </div>
              {{-- new input --}}
             <div class="column g-5 w-full">
             <label>Confirm Password</label>
             <div class="cont">
-                <input name="confirm_password" type="text" vitecss-type="password" placeholder="Enter password again" class="inp input required">
+                <input name="confirm_password" type="password" autocomplete="new-password" readonly onfocus="this.removeAttribute('readonly')" placeholder="Enter password again" class="inp input required">
             </div>
            </div>
              {{-- new input --}}

@@ -15,14 +15,14 @@
             <div class="column g-5 w-full">
                 <label>Admin Tag</label>
             <div class="cont">
-                <input  name="id"  placeholder="Enter Admin Tag" type="text" class="inp input required">
+                <input autocomplete="off" readonly onfocus="this.removeAttribute('readonly')" name="id"  placeholder="Enter Admin Tag" type="text" class="inp input required">
             </div>
             </div>
              {{-- new input column --}}
             <div class="column g-5 w-full">
                 <label>Password</label>
             <div class="cont">
-                <input name="password" placeholder="Enter account password" vitecss-type="password" type="text" class="inp input required">
+                <input autocomplete="new-password" readonly onfocus="this.removeAttribute('readonly')" name="password" placeholder="Enter account password" type="password" class="inp input required">
             </div>
             </div>
            

@@ -85,21 +85,21 @@
                 <div class="column g-5 w-full">
                  <label>Current Password</label>
                 <div class="cont">
-                    <input name="current" placeholder="Enter current account password" vitecss-type="password" type="text" class="inp input required">
+                    <input autocomplete="new-password" readonly onfocus="this.removeAttribute('readonly')" name="current" placeholder="Enter current account password" type="password" class="inp input required">
                 </div>
                </div>
                 {{-- new input --}}
                 <div class="column g-5 w-full">
                  <label>New Password</label>
                <div class="cont">
-                    <input name="new" placeholder="Enter new account password" type="text" vitecss-type="password" class="inp input required">
+                    <input name="new" placeholder="Enter new account password" type="password" autocomplete="new-password" readonly onfocus="this.removeAttribute('readonly')" class="inp input required">
                 </div>
                </div>
                {{-- new input --}}
                 <div class="column g-5 w-full">
                  <label>Confirm New Password</label>
                <div class="cont">
-                    <input name="confirm" placeholder="Re-Type new account password" type="text" vitecss-type="password" class="inp input required">
+                    <input name="confirm" placeholder="Re-Type new account password" type="password" autocomplete="new-password" readofnly onfocus="this.removeAttribute('readonly')" class="inp input required">
                 </div>
                </div>
               
