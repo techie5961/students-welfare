@@ -332,9 +332,10 @@
             </div>
           </div>
         @endforeach
+       </div>
+
         @endif
        
-       </div>
     </section>
  {{-- overlay --}}
  <section class="overlay">

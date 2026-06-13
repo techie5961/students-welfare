@@ -183,6 +183,7 @@ class AdminsPostRequestController extends Controller
         $message='Finance settings updated success';
         $key='finance_settings';
         $value=[
+        'welcome_bonus' => request('welcome_bonus'),
         'withdrawal' => [
             'minimum' => request('minimum_withdrawal'),
             'maximum' => request('maximum_withdrawal'),

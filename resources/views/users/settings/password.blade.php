@@ -99,7 +99,7 @@
                 <div class="column g-5 w-full">
                  <label>Confirm New Password</label>
                <div class="cont">
-                    <input name="confirm" placeholder="Re-Type new account password" type="password" autocomplete="new-password" readofnly onfocus="this.removeAttribute('readonly')" class="inp input required">
+                    <input name="confirm" placeholder="Re-Type new account password" type="password" autocomplete="new-password" readonly onfocus="this.removeAttribute('readonly')" class="inp input required">
                 </div>
                </div>
               

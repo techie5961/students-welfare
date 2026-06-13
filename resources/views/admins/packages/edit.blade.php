@@ -92,7 +92,7 @@
                     <input value="{{ $data->available }}" name="available" placeholder="E.g 200" value="1000" type="number" class="inp input required">
                 </div>
             </div>
-            <button class="post">Add Package</button>
+            <button class="post">Save Changes</button>
         </form>
     </section>
 @endsection

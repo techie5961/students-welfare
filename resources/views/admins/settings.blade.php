@@ -40,7 +40,18 @@
                 </div>
                 <input type="hidden" name="withdrawal_portal" value="{{ $general_settings->withdrawal->portal ?? 'off' }}" class="inp input">
             </div>
-             
+              {{-- new input --}}
+            <div class="column g-5 w-full">
+               <div class="column g-2">
+                 <label>Welcome Bonus(₦)</label>
+                <small class="opacity-05">Set to zero if no welcome bonus</small>
+                </div> 
+                <div class="cont">
+                    <input value="{{ $finance_settings->welcome_bonus ?? '' }}" name="welcome_bonus" type="number" placeholder="E.g ₦1000" class="inp required input">
+                </div>
+              
+                  </div>
+
             {{-- new input --}}
             <div class="column g-5 w-full">
                <div class="column g-2">
